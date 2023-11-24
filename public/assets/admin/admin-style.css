@@ -1,0 +1,46 @@
+/* admin-style.css */
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #1e1e2d;
+    color: #fff; /* Text color */
+}
+
+/* Profile section styling */
+.nav-profile {
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-profile-image img {
+    width: 50px; /* Adjust the image size as needed */
+    border-radius: 50%;
+}
+
+.nav-profile-text {
+    margin-top: 10px;
+}
+
+/* Menu item styling */
+.nav-item {
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.nav-item:hover {
+    background: #3a3a4e;
+}
+
+.menu-title {
+    margin-left: 10px;
+}
+
+/* Sub-menu styling */
+.sub-menu {
+    margin-left: 20px;
+}
+
+/* Active menu item styling */
+.nav-item.active {
+    background: #3a3a4e;
+}
