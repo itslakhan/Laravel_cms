@@ -45,7 +45,7 @@ route::get('adminlogin',[admincontroller::class , 'index'])->name('loginform');
 route::post('adminlogin',[admincontroller::class , 'adminlogin'])->name('adminlogin');
 
 route::group(['middleware' =>'auth:admin'],function(){
-route::get('content',[admincontroller::class , 'content'])->name('admin.content');
+route::get('content',[admincontroller::class , 'content'])->name('content');
 route::post('logout',[admincontroller::class , 'logout'])->name('admin.logout');
 
 route::get('homecontent',[homecontroller::class , 'homecontent'])->name('homecontent');
