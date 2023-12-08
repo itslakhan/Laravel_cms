@@ -43,13 +43,15 @@ route::get('services',[basecontroller::class , 'services'])->name('services');
 
 route::get('adminlogin',[admincontroller::class , 'index'])->name('loginform');
 route::post('adminlogin',[admincontroller::class , 'adminlogin'])->name('adminlogin');
+// route::get('AdminEmail',[admincontroller::class , 'AdminEmail'])->name('AdminEmail');
+
 
 route::group(['middleware' =>'auth:admin'],function(){
 route::get('content',[admincontroller::class , 'content'])->name('content');
 route::post('logout',[admincontroller::class , 'logout'])->name('admin.logout');
 
 route::get('homecontent',[homecontroller::class , 'homecontent'])->name('homecontent');
-route::post('homecontent',[homecontroller::class , 'homecontentupdate'])->name('home.update');
+route::post('homecontent',[homecontroller::class , 'homecontentupdate'])->name('home.update');  
 
 
 });

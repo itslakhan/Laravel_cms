@@ -22,26 +22,28 @@
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">ram </a></h3>
+            {{-- <i class="ri-bar-chart-box-line"></i> --}}
+            <img src="storage/{{ $homeContent->icon_2 }}" alt="" />
+
+            <h3><a href="">{{ $homeContent->icon_title_2 }} </a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">Sedare Perspiciatis</a></h3>
+            <h3><a href="">{{ $homeContent->icon_title_3 }}</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-paint-brush-line"></i>
-            <h3><a href="">Magni Dolores</a></h3>
+            <h3><a href="">{{ $homeContent->icon_title_4 }}</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-database-2-line"></i>
-            <h3><a href="">home1</a></h3>
+            <h3><a href="">{{ $homeContent->icon_title_5 }}</a></h3>
           </div>
         </div>
       </div>
